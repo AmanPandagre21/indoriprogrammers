@@ -4,7 +4,7 @@
     <h5 class="contacthead text-center">CONTACT US</h5>
 </div>
 
-<div class="container mt-3 mb-4" >
+<div class="container mt-3 mb-4" data-aos="fade-up">
     <div class="row">
     <div class="col-md-5">
     <h5 style="text-align: justify; font-weight: inherit; font-size: 1.1rem;">For any project work or to hire any programmers or designer feel free to contact us any time. We are always ready to give our best to help you to achieve your target.</h5>

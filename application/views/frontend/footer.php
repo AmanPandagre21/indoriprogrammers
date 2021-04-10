@@ -13,9 +13,9 @@
 
       <div class="col-md-4">
         <h5 class="instagram text-center">Follow Us:</h5>
-        <center><a href="https://www.instagram.com/indori_programmers/" id="footerInstabtn"><i class="fab fa-instagram"
+        <center><a href="https://www.instagram.com/indori_programmers/" id="footerInstabtn" target="_blank"><i class="fab fa-instagram"
               style="font-size: 40px; color: white; margin: 10px 10px 0 -5px;"></i></a>
-          <a href="https://www.linkedin.com/company/indori-programmers" id="footerLDbtn"><i class="fab fa-linkedin"
+          <a href="https://www.linkedin.com/company/indori-programmers" id="footerLDbtn" target="_blank"><i class="fab fa-linkedin"
               style="font-size: 40px; color: white;"></i></a>
         </center>
       </div>

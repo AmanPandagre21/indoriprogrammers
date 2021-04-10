@@ -21,13 +21,10 @@
 </section>
 
 <!-- about us -->
-<section class="about-section">
+<section class="about-section mt-3 mb-3" data-aos="fade-up">
   <div class="container-fluid aboutcontainerHome">
-    <div class="abtheading">
-      <h1 class="text-uppercase text-center" id="aboutSection"> <span>About</span> Us</h1>
-    </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 pt-3 pb-3">
         <center><img src="<?php echo base_url().'public/images/logo1.png'; ?>" class="aboutimg">
           <center>
       </div>
@@ -49,16 +46,18 @@
 
 <!-- ----------Needs----------- -->
 
-<section class="needs-section">
+<section class="needs-section" data-aos="fade-up">
   <div class="needs-img">
     <img src="<?php echo base_url().'public/images/needs.png'; ?>">
   </div>
 </section>
 
-<section class="hire-section">
+<!-- ---------hier now------- -->
+
+<section class="hire-section" data-aos="fade-up">
   <div class="container">
     <div class="hireheading">
-      <h1 class="text-uppercase text-center"> <span>Hire</span> Now</h1>
+      <h1 class="text-uppercase text-center">Hire Now</h1>
     </div>
     <div class="card-div">
       <div class="row">
@@ -69,7 +68,8 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Cras justo odio</li>
@@ -88,10 +88,15 @@
             <div class="card-header" style=" background-color: #0068AC; height: 150px;">
               <h1>DEVELOPER</h1>
             </div>
-            <svg style="margin-top: -20%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,192C384,213,480,267,576,250.7C672,235,768,149,864,122.7C960,96,1056,128,1152,154.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg style="margin-top: -20%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,186.7C96,181,192,171,288,192C384,213,480,267,576,250.7C672,235,768,149,864,122.7C960,96,1056,128,1152,154.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+              </path>
+            </svg>
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Cras justo odio</li>
@@ -110,14 +115,13 @@
 </section>
 
 
-<!-- Programmers   data-aos="fade-up-->
+<!-- Programmers   -->
 
 <section class="programmer-section">
-  "
-  <div class="container-fluid mb-5">
-    <div class="proheadingHome">
-      <h1 class="text-uppercase text-center" id="proSection"> <span>Our</span> Programmers</h1>
-    </div>
+  <div class="programmerheading">
+    <h1 class="text-uppercase text-center"  data-aos="fade-up">Programmers </h1>
+  </div>
+  <div class="container-fluid mb-5"  data-aos="fade-up">
     <div class="owl-carousel owl-theme">
       <?php                    
       if(!empty($fetchingHomeDetail)){ 

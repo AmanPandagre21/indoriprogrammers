@@ -4,7 +4,7 @@
     <h5 class="registerhead text-center">REGISTER AS A PROGRAMMER</h5>
 </div>
 
-<div class="container mt-3 mb-4" >
+<div class="container mt-3 mb-4" data-aos="fade-up">
    
         <div class="content" style="margin-left: 0px;">
      <h5 style="text-align: justify; font-weight: inherit; ">Registration Procedure:</h5>

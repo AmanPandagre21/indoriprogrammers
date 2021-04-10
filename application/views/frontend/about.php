@@ -4,7 +4,7 @@
 </div>
 
 
-<div class="container aboutcontainer">
+<div class="container aboutcontainer" data-aos="fade-up">
     <div class="row">
         <div class="col-md-6">
             <h2 class="aboutmid pb-1">ABOUT US</h2>

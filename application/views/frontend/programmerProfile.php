@@ -5,12 +5,12 @@
 <?php if(!empty($fetchingProgrammerDetail)){ ?>
 
 <div class="programmersProfile pb-4">
-  <img src="<?php echo base_url().'/public/uploads/programmers/'.$fetchingProgrammerDetail['image']; ?>" class="rounded-circle programmerprofileimg">
-  <h1 class="programmerProfileHead text-center pt-1"><?php echo strtoupper($fetchingProgrammerDetail['name']); ?></h1>
+  <img src="<?php echo base_url().'/public/uploads/programmers/'.$fetchingProgrammerDetail['image']; ?>" class="rounded-circle programmerprofileimg" data-aos="fade-up">
+  <h1 class="programmerProfileHead text-center pt-1" data-aos="fade-up"><?php echo strtoupper($fetchingProgrammerDetail['name']); ?></h1>
 
 </div>
 
-<div class="container">
+<div class="container" data-aos="fade-up">
   <div class="row">
     <div class="col-md-8">
       <div class="card mb-3" style="border: 2px solid white; box-shadow: none;">
@@ -29,7 +29,7 @@
     </div>
 
     <div class="col-md-4" style="margin: auto 0 auto 0;">
-    <center><a href="<?php echo $fetchingProgrammerDetail['projects_link']; ?>" class="btn btn-primary" id="programmerProfilebtn"><i class="fab fa-android" style="font-size: 27px;"></i> Project</a></center>
+    <center><a href="<?php echo $fetchingProgrammerDetail['projects_link']; ?>" class="btn btn-primary" id="programmerProfilebtn" target="_blank"><i class="fab fa-android" style="font-size: 27px;"></i> Project</a></center>
 
     </div>
 
