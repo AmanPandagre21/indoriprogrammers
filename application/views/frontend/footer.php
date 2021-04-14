@@ -40,6 +40,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <!-- <script src="<?php echo base_url('public/js/javascript.js'); ?>"></script> -->
+<script src="<?php echo base_url('public/js/jquery.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/jquery-3.5.1.slim.min.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/bootstrap.min.js'); ?>"></script>
 <script src="<?php echo base_url('public/js/infiniteslidev2.js'); ?>"></script>
@@ -51,6 +52,9 @@
   crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
 <script>
   AOS.init({
     offset: 150,
@@ -131,6 +135,9 @@
 
   });
 </script>
+
+
+
 
 </body>
 

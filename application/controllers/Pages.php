@@ -12,6 +12,7 @@ class Pages extends CI_Controller {
     
     public function programmer()
 	{
+		$output ='';
 		$this->load->model("front/Programmer_model");
 		$this->load->model('admin/Programmer_profile_model');
 		
@@ -21,7 +22,6 @@ class Pages extends CI_Controller {
 		$param['profile'] = $this->input->get('profile');
 		$fetchingDetail = $this->Programmer_model->getProgrammer_Home($param);
 		$data['fetchingDetail'] = $fetchingDetail;
-
 		$this->load->view('frontend/programmers', $data);
 	}
 

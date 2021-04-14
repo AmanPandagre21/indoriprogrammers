@@ -4,14 +4,14 @@
     <h5 class="prohead text-center">Search <span class="typed"></span></h5>
 </div>
 
-<div class="container-fluid prolist" data-aos="fade-up">
-    <form method="get" id="searchprofile" name="searchprofiles" action="">
+<div class="container-fluid prolist" data-aos="fade-up">>
+    <form method="GET" id="searchprofile" name="searchprofiles">
         <div class="input-group mt-3 mx-auto" style="width: 340px;">
-            <select name="profile" id="prfl" class="form-control <?php echo (form_error('profile') != '') ? 'is-invalid' : ''; ?>" >
+            <select name="profile" id="select_search" class="form-control <?php echo (form_error('profile') != '') ? 'is-invalid' : ''; ?>" >
                 <option value="">Select a Profile</option>
                 <?php if (!empty($getProgrammerProfile)) { ?>   
                 <?php foreach ($getProgrammerProfile as  $value) { ?>
-                <option name="profiles" value="<?php echo $value['id'];?>" <?php echo set_select('profile', $value['id'], FALSE);  ?>><?php echo strtoupper($value['programmer_profile']); ?></option>
+                <option name="profiles"  value="<?php echo $value['id'];?>"  <?php echo set_select('profile', $value['id'], FALSE);  ?>><?php echo strtoupper($value['programmer_profile']); ?></option>
                 <?php  } }  ?>
             </select>
             <div class="input-group-append">
@@ -20,8 +20,11 @@
             <?php echo form_error('profile'); ?> 
         </div>
     </form>
+    <div id="result">
+    
+    </div>
 
-    <div class="row">
+    <div class="row" >
     <?php                    
     if(!empty($fetchingDetail)){ 
            foreach ($fetchingDetail as  $value) { ?>
@@ -58,3 +61,31 @@
 </div>
 
 <?php $this->load->view('frontend/footer.php'); ?>
+<!-- <script type="text/javascript">
+$('document').ready(function() {
+
+loadData();
+
+function loadData(profile)
+{
+  $.ajax({
+    url: "<?php echo base_url().'Pages/programmer' ?>",
+    method: "GET",
+    data: {fetchingDetail:profile}, 
+    success: function(data){
+    $('#result').html(data);
+    }
+  });
+}
+
+$('#select_search').on('change', function(){
+  let search = $(this).val();
+    if(search != ''){
+        loadData(search);
+    }else{
+        loadData();
+    }
+});
+
+});
+</script> -->

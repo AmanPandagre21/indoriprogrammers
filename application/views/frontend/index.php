@@ -47,8 +47,8 @@
 <!-- ----------Needs----------- -->
 
 <section class="needs-section" data-aos="fade-up">
-  <div class="needs-img">
-    <img src="<?php echo base_url().'public/images/needs.png'; ?>">
+  <div class="container-fluid needs-img">
+    <img src="<?php echo base_url().'public/images/needs.gif'; ?>">
   </div>
 </section>
 
@@ -62,50 +62,59 @@
     <div class="card-div">
       <div class="row">
         <div class="col-md-6 col-sm-6 col-12">
-          <div class="card">
-            <div class="card-header">
-              <h1>DEVELOPER</h1>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-sm-6 col-12">
-          <div class="card">
-            <div class="card-header" style=" background-color: #0068AC; height: 150px;">
-              <h1>DEVELOPER</h1>
+          <div class="card text-center text-uppercase">
+            <div class="card-header" style=" background-color: #0068AC; height: 170px;">
+              <h1 class="mt-3" style="color: white;">Hire A Team</h1>
             </div>
             <svg style="margin-top: -20%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#fff" fill-opacity="1"
                 d="M0,192L48,186.7C96,181,192,171,288,192C384,213,480,267,576,250.7C672,235,768,149,864,122.7C960,96,1056,128,1152,154.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
               </path>
             </svg>
-            <div class="card-body">
+            <!-- <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-            </div>
+            </div> -->
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
               <li class="list-group-item">Vestibulum at eros</li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>   
             </ul>
-            <div class="card-body">
+            <div class="card-body text-center text-uppercase">
               <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-12">
+          <div class="card text-center text-uppercase">
+            <div class="card-header" style=" background-color: #0068AC; height: 170px;">
+              <h1  class="mt-3"  style="color: white;">hire an individual</h1>
+            </div>
+            <svg style="margin-top: -20%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,186.7C96,181,192,171,288,192C384,213,480,267,576,250.7C672,235,768,149,864,122.7C960,96,1056,128,1152,154.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+              </path>
+            </svg>
+            <!-- <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div> -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body text-center text-uppercase">
+              <a href="#" class="card-link">Card link</a>
             </div>
           </div>
         </div>
