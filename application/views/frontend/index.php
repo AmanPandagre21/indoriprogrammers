@@ -47,7 +47,7 @@
 <!-- ----------Needs----------- -->
 
 <section class="needs-section" data-aos="fade-up">
-  <div class="container-fluid needs-img">
+  <div class="container needs-img">
     <img src="<?php echo base_url().'public/images/needs.gif'; ?>">
   </div>
 </section>
