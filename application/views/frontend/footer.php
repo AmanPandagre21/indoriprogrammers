@@ -74,6 +74,17 @@
 </script>
 
 <script type="text/javascript">
+if (window.matchMedia('(max-width: 768px)').matches)
+{
+  $('document').ready(function() {
+    $('#needDesktop').hide();
+  });
+}else{
+  $('#needPhone').hide();
+}
+</script>
+
+<script type="text/javascript">
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 250,
@@ -122,7 +133,7 @@
 <script type="text/javascript">
   var typedHome = new Typed('.typedHome', {
     strings: [
-      "Are you looking for <br> a programmer or <br> developer or designer? <br> Congratulations! <br> You are at right place.",
+      "Are you looking for <br> a programmer or <br> developer or designer? <br> <span style='color: #0c274e;'>Congratulations!</span> <br> You are at right place.",
    
     ],
     typeSpeed: 50,

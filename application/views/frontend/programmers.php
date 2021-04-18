@@ -4,9 +4,9 @@
     <h5 class="prohead text-center">Search <span class="typed"></span></h5>
 </div>
 
-<div class="container-fluid prolist" data-aos="fade-up">>
+<div class="container-fluid prolist">
     <form method="GET" id="searchprofile" name="searchprofiles">
-        <div class="input-group mt-3 mx-auto" style="width: 340px;">
+        <div class="input-group mt-3 mx-auto" style="width: 340px;" data-aos="fade-up">
             <select name="profile" id="select_search" class="form-control <?php echo (form_error('profile') != '') ? 'is-invalid' : ''; ?>" >
                 <option value="">Select a Profile</option>
                 <?php if (!empty($getProgrammerProfile)) { ?>   
@@ -20,11 +20,11 @@
             <?php echo form_error('profile'); ?> 
         </div>
     </form>
-    <div id="result">
+    <div id="result" data-aos="fade-up">
     
     </div>
 
-    <div class="row" >
+    <div class="row" data-aos="fade-up">
     <?php                    
     if(!empty($fetchingDetail)){ 
            foreach ($fetchingDetail as  $value) { ?>

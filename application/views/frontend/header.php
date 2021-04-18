@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     
     <style>
-      @media only screen and (max-width: 700px){
+      @media only screen and (max-width: 800px){
         .navbar-nav{
             background: linear-gradient(to left, #0c274e, #0068ac) !important;
             }

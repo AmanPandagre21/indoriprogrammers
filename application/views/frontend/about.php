@@ -6,14 +6,14 @@
 
 <div class="container aboutcontainer" data-aos="fade-up">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <h2 class="aboutmid pb-1">ABOUT US</h2>
             <p class="aboutcontents">Indori Programmers is a startup based in Indore and a platform for all programmers, developers, designers to come together and collaborate to work.
 Usually, programmers lack in experience and knowledge of various domains needed to complete a project. By our platform a team of versatile members comes up having the knowledge of various domains which supports them to accomplish their work efficiently.
 </p>
         </div>
         
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <center><video controls autoplay muted class="vidplay">
                 <source src="<?php echo base_url().'public/video/Indori.mp4'; ?>" >
             </video>
