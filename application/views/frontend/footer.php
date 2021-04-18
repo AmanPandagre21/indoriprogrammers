@@ -17,6 +17,10 @@
               style="font-size: 40px; color: white; margin: 10px 10px 0 -5px;"></i></a>
           <a href="https://www.linkedin.com/company/indori-programmers" id="footerLDbtn" target="_blank"><i class="fab fa-linkedin"
               style="font-size: 40px; color: white;"></i></a>
+              <a href="https://discord.gg/wR7Av4FQ" id="footerLDbtn" target="_blank"><i class="fab fa-discord"
+              style="font-size: 37px; color: white; margin: 10px 10px 0 0;"></i></a>
+              <a href="https://www.youtube.com/channel/UC0yqC86upw5awSnHEq4ZFDQ" id="footerLDbtn" target="_blank"><i class="fab fa-youtube"
+              style="font-size: 40px; color: white; margin: 10px 10px 0 0;"></i></a>
         </center>
       </div>
       <div class="col-md-4">
