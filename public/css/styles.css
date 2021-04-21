@@ -236,6 +236,8 @@
     transform:rotate(180deg);
      transition: 0.3s;
      margin-bottom: -70px;
+     border-bottom: none;
+
    }
     
 
