@@ -9,6 +9,19 @@ class Programmer_model extends CI_Model {
     
     }
 
+    
+  public function fetchProgrammer($programmer_id)
+  {
+        $this->db->select('programmersdetail.*, programmers_profiles.programmer_profile as programmer_profile_name');
+        $this->db->order_by("programmersdetail.dateandtime","DESC");
+        $this->db->where("programmersdetail.profile", $programmer_id);
+        $this->db->join("programmers_profiles","programmers_profiles.id=programmersdetail.profile","left");
+        $query = $this->db->get('programmersdetail');
+        return $query->result_array();
+
+    }
+
+
     public function getProgrammer_Home($param = array())
     {
 

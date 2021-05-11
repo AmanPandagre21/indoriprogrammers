@@ -9,10 +9,45 @@ class Pages extends CI_Controller {
 	{
 		$this->load->view('frontend/about');
     }
+
+	public function fetchProgrammers(){
+		$output ='';
+		$this->load->model("front/Programmer_model");
+		if($this->input->post('programmer_id')){
+		$getProgrammer= $this->Programmer_model->fetchProgrammer($this->input->post('programmer_id'));
+		foreach ($getProgrammer as $value) {
+
+			$output .= '
+			<div class="col-md-3">
+				<div class="card" id="procard">
+				   
+					<div class="card-body text-center" 
+						<div class="">
+						<img src="'.base_url('public/uploads/programmers/').$value['image'].'" class="rounded-circle proimages proimg"  />
+						</div>
+	
+						<div class="card-title text-center">
+							<h3 class="proname pt-2">'.strtoupper($value['name']).' </h3>
+							<hr id="prohr">
+							<div class="card-text text-center">
+								<h5 class="prowork">'. strtoupper($value['programmer_profile_name']) .'</h5>
+							</div>
+							<hr id="prohrb">
+							<a href="'. 'programmerProfile/'.$value['id'] .'" class="btn btn-primary view_btn" id="programmerprofile">VIEW PROFILE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			';
+			}
+			echo $output;
+		}
+	}
+
     
     public function programmer()
 	{
-		$output ='';
+
 		$this->load->model("front/Programmer_model");
 		$this->load->model('admin/Programmer_profile_model');
 		
