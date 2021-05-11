@@ -8,7 +8,7 @@ class Admin extends CI_Controller {
         if (!empty($this->session->userdata('adminsession'))) {
             redirect(base_url().'admin/Adminhome/index');
         }
-        $this->load->library('form_validation');
+        
 		$this->load->view('admin/adminlogin');
     }
     

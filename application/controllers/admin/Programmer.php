@@ -2,6 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Programmer extends CI_Controller {
+    public function __construct(){
+        parent::__construct();
+        if(empty($this->session->userdata('adminsession'))){
+            redirect(base_url().'admin/Admin/index');		
+            }
+    }
 
 public function index($page = 1)
 {

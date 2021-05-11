@@ -84,7 +84,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link pt-4 pb-4">
-      <img src="<?php echo base_url('public/images/logo.png'); ?>" alt="AdminLTE Logo" class="brand-image elevation-3"
+      <img src="<?php echo base_url('public/images/logo5.png'); ?>" alt="AdminLTE Logo" class="brand-image elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Admin Pannel</span>
     </a>
@@ -92,13 +92,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Sidebar -->
     <div class="sidebar">
 
-      <!-- Sidebar user panel (optional)
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <!-- Sidebar user panel (optional) -->
+      <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="<?php echo base_url()?>public/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?php echo $this->session->userdata('username') ?></a>
+          <a href="#" class="d-block"><?php echo $this->session->userdata('adminsession') ?></a>
         </div>
       </div> -->
 
