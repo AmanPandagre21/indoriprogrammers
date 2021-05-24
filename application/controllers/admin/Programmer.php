@@ -137,6 +137,8 @@ public function addDeveloper()
         }	
 
     }else{
+        $data['mainModule'] = "programmer";
+        $data['subModule'] = "sub";
     $this->load->view("admin/Programmers/addProgrammer", $data);    
     }
 }

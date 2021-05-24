@@ -16,7 +16,7 @@ class Pages extends CI_Controller {
 		if($this->input->post('programmer_id')){
 		$getProgrammer= $this->Programmer_model->fetchProgrammer($this->input->post('programmer_id'));
 		foreach ($getProgrammer as $value) {
-
+			
 			$output .= '
 			<div class="col-md-3">
 				<div class="card" id="procard">

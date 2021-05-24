@@ -75,7 +75,9 @@ public function addProfiles()
       redirect(base_url()."admin/Programmer_profile/index");
 
    }else{
-       $this->load->view("admin/Profile/addProfile");
+      $data['mainModule'] = "profile";
+      $data['subModule'] = "sub";
+       $this->load->view("admin/Profile/addProfile", $data);
    }
 }
 

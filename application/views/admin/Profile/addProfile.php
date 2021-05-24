@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="col-md-6">
-                          <a href="<?php echo base_url().'admin/Programmer/index' ?>" class="btn btn-secondary btn-block">Back</a>
+                          <a href="<?php echo base_url().'admin/Programmer_profile/index' ?>" class="btn btn-secondary btn-block">Back</a>
                         </div>
                       </div>
                     </div> 

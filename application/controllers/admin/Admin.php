@@ -5,9 +5,9 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
-        if (!empty($this->session->userdata('adminsession'))) {
-            redirect(base_url().'admin/Adminhome/index');
-        }
+        // if (!empty($this->session->userdata('adminsession'))) {
+        //     redirect(base_url().'admin/Adminhome/index');
+        // }
         
 		$this->load->view('admin/adminlogin');
     }
@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
         if($this->form_validation->run() == true) {
 
            $name =  $this->input->post('username');
-          
+       
            $admin_detail = $this->Admin_model->adminInfo($name);
      
          if (!empty($admin_detail)) {
@@ -34,6 +34,7 @@ class Admin extends CI_Controller {
                             
                         $adminarray['admin_id'] = $admin_detail['id'];
                         $adminarray['admin_name'] = $admin_detail['username'];
+
                         $this->session->set_userdata('adminsession', $adminarray);
                         redirect(base_url().'admin/Adminhome/index');
 

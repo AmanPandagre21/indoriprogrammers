@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+  <link rel="icon" type="image/png" href="<?php echo base_url('public/images/logo5.png'); ?>">
   <link rel="stylesheet" href="<?php echo base_url()?>public/admin/plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="<?php echo base_url()?>public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
@@ -15,12 +15,12 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style=" background: linear-gradient(to left, #0c274e, #0068ac) !important;">
 
 
 <div class="login-box">
-  <div class="login-logo">
-    <a href="#"><b>Admin</b>Login</a>
+  <div class="login-logo" >
+    <a href="#" style="color: white;"><b>Admin</b>Login</a>
   </div>
     
   <?php 
@@ -43,7 +43,7 @@
 
       <form action="<?php echo base_url().'admin/admin/adminLogin'; ?>" method="post">
         <div class="input-group mb-3">
-          <input type="text" name="username" class="form-control <?php echo (form_error('username') != '') ? 'is-invalid': ''; ?>" value="<?php echo set_value('username'); ?>" placeholder="Username">
+          <input type="text" name="username" id="name" class="form-control <?php echo (form_error('username') != '') ? 'is-invalid': ''; ?>" value="<?php echo set_value('username'); ?>" placeholder="Username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="input-group mb-3">
-          <input type="password" name="password" class="form-control <?php echo (form_error('password') != '') ? 'is-invalid' : ''; ?>"  placeholder="Password">
+          <input type="password" name="password" id="pass" class="form-control <?php echo (form_error('password') != '') ? 'is-invalid' : ''; ?>"  placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -62,23 +62,23 @@
         
         <div class="row">
           <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
+            <!-- <div class="icheck-primary">
+              <input type="checkbox" name="check" id="remember">
               <label for="remember">
                 Remember Me
               </label>
-            </div>
+            </div> -->
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-danger btn-block">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
       <p class="mb-3 mt-4">
-        <a href="<?php echo base_url().'admin/Admin/changePassword'; ?>">forgot password</a>
+        <a href="<?php echo base_url().'admin/Admin/changePassword'; ?>" class="text-uppercase">forgot password</a>
       </p>
       
     </div>
@@ -93,6 +93,7 @@
 <script src="<?php echo base_url()?>public/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo base_url()?>public/admin/dist/js/adminlte.min.js"></script>
+
 
 </body>
 </html>
